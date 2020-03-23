@@ -1,0 +1,30 @@
+<ion-content>
+    <div class="container">
+        <div class="background">
+            <b>MESSENGER</b>
+            <div class="form">
+                <ion-input type="text" name="acc" id="username" class="user-eff" placeholder="Tên tài khoản" [(ngModel)]="acc">
+                    <i class="fas fa-user"></i>
+                    <span class="focus-border"><i></i></span>
+                </ion-input>
+                <ion-input type="password" name="pass" id="password" class="user-eff" placeholder="Mật khẩu" [(ngModel)]="pass">
+                    <i class="fas fa-key"></i>
+                    <span class="focus-border"><i></i></span>
+                </ion-input>
+            </div>
+            <div class="form">
+                <button type="submit" class="btn" (click)="goHome()">ĐĂNG NHẬP</button>
+            </div>
+            <div class="footer ">
+                <a class="signup" [routerLink]="['signup']">Đăng ký ?</a>
+                <a class="forgetpass" [routerLink]="['forget-pass']">Quên mật khẩu ?</a>
+            </div>
+        </div>
+    </div>
+</ion-content>
+<ion-footer>
+    <div class="foot ">
+        <p>from</p>
+        <b>FACE BOOK</b>
+    </div>
+</ion-footer>
